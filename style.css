@@ -1,0 +1,182 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-blue: #0a192f;
+    --secondary-blue: #112240;
+    --accent-blue: #64ffda;
+    --text-blue: #ccd6f6;
+    --bright-blue: #0077ff;
+}
+
+body {
+    background-color: var(--primary-blue);
+    color: var(--text-blue);
+    line-height: 1.6;
+}
+
+/* Navegação */
+header {
+    background: var(--secondary-blue);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: var(--bright-blue);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-blue);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--bright-blue);
+}
+
+/* Seções Gerais */
+section {
+    padding: 100px 10% 60px;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--bright-blue);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: var(--bright-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s transform;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: #0056b3;
+}
+
+/* Tecnologias (Skills) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background: var(--secondary-blue);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid var(--bright-blue);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--bright-blue);
+    margin-bottom: 20px;
+}
+
+/* Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--secondary-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-img {
+    height: 200px;
+    background: #1d2d50; /* Placeholder para imagem */
+    border-bottom: 2px solid var(--bright-blue);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.btn-sm {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--bright-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #060e1a;
+}

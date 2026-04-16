@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Meu Portfólio | Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Meu primeiro site!</h1>
+
+    <header>
+        <nav>
+            <div class="logo">Dev<span>Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tech">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou um <span class="highlight">Desenvolvedor Full Stack</span></h1>
+            <p>Transformando ideias em soluções robustas e interfaces intuitivas.</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>Sobre Mim</h2>
+        <div class="about-container">
+            <p>
+                Sou apaixonado por tecnologia e resolução de problemas. Com foco em entregar código limpo e eficiente, 
+                busco constantemente aprender novas ferramentas para criar experiências digitais incríveis. 
+                Minha jornada envolve desde a lógica complexa do back-end até o refinamento visual do front-end.
+            </p>
+        </div>
+    </section>
+
+    <section id="tech" class="skills">
+        <h2>Minhas Tecnologias</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p>Desenvolvimento de sistemas escaláveis e APIs robustas.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Criação de dinamismo e interatividade no lado do cliente.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Construção de interfaces modernas e componentes reutilizáveis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>Projetos em Destaque</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>E-Commerce API</h3>
+                    <p>Sistema de gerenciamento de vendas desenvolvido em Java com Spring Boot.</p>
+                    <a href="#" class="btn-sm">Ver no GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>Task Manager</h3>
+                    <p>Aplicação de lista de tarefas interativa feita com React e Styled Components.</p>
+                    <a href="#" class="btn-sm">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Criado por Mim. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
